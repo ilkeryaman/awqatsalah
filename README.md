@@ -86,7 +86,7 @@ REFRESH_TOKEN_EXPIRES_IN  | Validity period for refresh token (in seconds). | 90
 
 ### Running on your local computer
 
-Run following command to start up rest-mockserver on your local:
+Run following command to start up mock server on your local:
 
 ```sh
 npm start
