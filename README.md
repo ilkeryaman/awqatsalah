@@ -4,10 +4,6 @@ Bu uygulama, Diyanet İşleri Başkanlığı tarafından sağlanan AwqatSalah Re
 
 This is a project that generates similar responses for AwqatSalah Rest services which is belonged to Presidency of Religious Affairs, at Republic of Türkiye. It generates mock data and help you avoid query limits.
 
-[TOCM]
-
-[TOC]
-
 ## Başlarken
 
 Buradaki yönlendirmeler, mock server uygulamasını kendi bilgisayarınızda ayağa kaldırmanıza yardımcı olacaktır.
@@ -34,9 +30,9 @@ Parametre  | Açıklama | Varsayılan Değer
 SERVER_PORT  | Mock server uygulamasının hangi port üzerinden çalıştırılacağını gösterir. | 3000
 EMAIL  | Uygulamadan JWT token alabilmek için kullanılması gereken e-mail adresi bilgisini gösterir. | awq@salah.com
 PASSWORD  | Uygulamadan JWT token alabilmek için kullanılması gereken şifre bilgisini gösterir. | diyanet2023
-ACCESS_TOKEN_SECRET  | Yeni access token imzalanması için gerekli gizli anahtar | mePouszR8bRg0oY2oh06U1C-93A9g4u1CDEIxR0mBBalDqDNMNQXHH2SoLSzZa_arblR20p4iVjkQR1ECcc1Rw97AofUsb_0TeSll1o_Z3uQgXtkhxawqL1mBkmf0CVrTwIwtu_1JdYLCwL81jK0SuTF5Ks1eDsVkA5opMbzUlckXIwDN2IDscq1LiuvSswmOh-7xKeKjzBwQg0JbzVwv-sDYgN3Up3GgrCAFRJvt1acJScVRGo-ETxkISwco61clU_O6v-Fg9vU0jjLFMIGEtKawm9plb1sQq9x3j5gfUIyDe0zmU-NVtfZ7wgasXu4KRcKse2aOOxLQQEJ0S1a0w
+ACCESS_TOKEN_SECRET  | Yeni access token imzalanması için gerekli gizli anahtar | 
 ACCESS_TOKEN_EXPIRES_IN  | Üretilen access token için erişim süresi (saniye cinsinden) | 1800 (30 dk)
-REFRESH_TOKEN_SECRET  | Yeni refresh token imzalanması için gerekli gizli anahtar | vnSJn27MJPk0rewbWepb_5901YyHsxp6jpWHUWgoxzABwhpXQoqWvtlGujtojYzxuSZU9UlV25H-tmrIS5SKT9YsFbqC_IFHW9cIqM0eeVUxyYTUQZplhwvL2T6h8hqICMRON6G_flYP9y6ftpyW2ngVh-B3Q2A5L1XGZCZC0xZgcdp-Nfc4aoS8GPexjtDS-mKi9kcgS97SL1kN_Q-8Rgl_43mV2Ppnm1Tx-o4Xlt31E2umGNNZWjnTmuxGa-1AGHIGItEXzjlwpME41ohhowhlWh89ubtGjTsixeeIV5I2m0x-SsX9Wpx2Wxfy6nWbHQSQYGRRpgvTjQb_69Ki7w
+REFRESH_TOKEN_SECRET  | Yeni refresh token imzalanması için gerekli gizli anahtar | 
 REFRESH_TOKEN_EXPIRES_IN  | Üretilen refresh token için erişim süresi | 900 (15 dk)
 
 > **NOT**: Kendinize özel yeni gizli anahtar üretmek için https://mkjwk.org/ adresini kullanabilirsiniz.
@@ -48,6 +44,9 @@ Mock server uygulamasını kendi bilgisayarınızda çalıştırmak için alttak
 ```sh
 npm start
 ```
+<br/>
+
+> **Awqat Salah** uygulaması ile ilgili detaylı bilgi için: https://awqatsalah.diyanet.gov.tr/index.html
 
 ---------------------------------------------
 
@@ -78,9 +77,9 @@ Parameter  | Description | Default Value
 SERVER_PORT  | Port number that mock server runs. | 3000
 EMAIL  | E-mail address information to get JWT token. | awq@salah.com
 PASSWORD  | Password information to get JWT token. | diyanet2023
-ACCESS_TOKEN_SECRET  | Private key to sign new access token. | mePouszR8bRg0oY2oh06U1C-93A9g4u1CDEIxR0mBBalDqDNMNQXHH2SoLSzZa_arblR20p4iVjkQR1ECcc1Rw97AofUsb_0TeSll1o_Z3uQgXtkhxawqL1mBkmf0CVrTwIwtu_1JdYLCwL81jK0SuTF5Ks1eDsVkA5opMbzUlckXIwDN2IDscq1LiuvSswmOh-7xKeKjzBwQg0JbzVwv-sDYgN3Up3GgrCAFRJvt1acJScVRGo-ETxkISwco61clU_O6v-Fg9vU0jjLFMIGEtKawm9plb1sQq9x3j5gfUIyDe0zmU-NVtfZ7wgasXu4KRcKse2aOOxLQQEJ0S1a0w
+ACCESS_TOKEN_SECRET  | Private key to sign new access token. | 
 ACCESS_TOKEN_EXPIRES_IN  | Validity period for access token (in seconds). | 1800 (30 mins)
-REFRESH_TOKEN_SECRET  | Private key to sign new refresh token. | vnSJn27MJPk0rewbWepb_5901YyHsxp6jpWHUWgoxzABwhpXQoqWvtlGujtojYzxuSZU9UlV25H-tmrIS5SKT9YsFbqC_IFHW9cIqM0eeVUxyYTUQZplhwvL2T6h8hqICMRON6G_flYP9y6ftpyW2ngVh-B3Q2A5L1XGZCZC0xZgcdp-Nfc4aoS8GPexjtDS-mKi9kcgS97SL1kN_Q-8Rgl_43mV2Ppnm1Tx-o4Xlt31E2umGNNZWjnTmuxGa-1AGHIGItEXzjlwpME41ohhowhlWh89ubtGjTsixeeIV5I2m0x-SsX9Wpx2Wxfy6nWbHQSQYGRRpgvTjQb_69Ki7w
+REFRESH_TOKEN_SECRET  | Private key to sign new refresh token. | 
 REFRESH_TOKEN_EXPIRES_IN  | Validity period for refresh token (in seconds). | 900 (15 mins)
 
 > **NOTE**: To generate new private key, you can visit https://mkjwk.org/.
