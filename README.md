@@ -44,6 +44,25 @@ Mock server uygulamasını kendi bilgisayarınızda çalıştırmak için alttak
 ```sh
 npm start
 ```
+
+Api listesi ve method tipleri (GET, POST, PUT, PATCH, DELETE vs.) alttaki gibi listelenecektir:
+```sh
+ =============================== ENDPOINT LIST ==============================
+ [POST]          http://localhost:3000/api/Auth/Login
+ [GET]           http://localhost:3000/api/Auth/RefreshToken/:refreshtoken
+ [GET]           http://localhost:3000/api/DailyContent
+ [GET]           http://localhost:3000/api/Place/Countries
+ [GET]           http://localhost:3000/api/Place/States
+ [GET]           http://localhost:3000/api/Place/States/:countryid
+ [GET]           http://localhost:3000/api/Place/Cities
+ [GET]           http://localhost:3000/api/Place/Cities/:stateid
+ [GET]           http://localhost:3000/api/Place/CityDetail/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Daily/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Weekly/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Monthly/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Eid/:cityid
+```
+
 <br/>
 
 > **Awqat Salah** uygulaması ile ilgili detaylı bilgi için: https://awqatsalah.diyanet.gov.tr/index.html
@@ -90,6 +109,23 @@ Run following command to start up mock server on your local:
 
 ```sh
 npm start
+```
+Endpoints and method types (GET, POST, PUT, PATCH, DELETE etc.) will be shown as output like:
+```sh
+ =============================== ENDPOINT LIST ==============================
+ [POST]          http://localhost:3000/api/Auth/Login
+ [GET]           http://localhost:3000/api/Auth/RefreshToken/:refreshtoken
+ [GET]           http://localhost:3000/api/DailyContent
+ [GET]           http://localhost:3000/api/Place/Countries
+ [GET]           http://localhost:3000/api/Place/States
+ [GET]           http://localhost:3000/api/Place/States/:countryid
+ [GET]           http://localhost:3000/api/Place/Cities
+ [GET]           http://localhost:3000/api/Place/Cities/:stateid
+ [GET]           http://localhost:3000/api/Place/CityDetail/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Daily/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Weekly/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Monthly/:cityid
+ [GET]           http://localhost:3000/api/PrayerTime/Eid/:cityid
 ```
 
 ## Geliştiriciler / Contributors
