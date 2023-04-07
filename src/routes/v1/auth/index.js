@@ -32,7 +32,6 @@ router.post('/Login', async (req, res, next) => {
             success: true,
             message: null
         });
-        next();
     }
 });
 

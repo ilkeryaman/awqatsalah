@@ -59,7 +59,7 @@ These instructions will get you a copy of the project up and running on your loc
 * Any command-line-interface (CLI) to run required commands,
 * Latest stable version of [Node.js](https://nodejs.org/en/).
 
-### Installing
+### Installation
 
 Run following command to install dependencies:
 
