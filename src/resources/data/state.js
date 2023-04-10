@@ -490,54 +490,12 @@ const states = [
         "code": "AZERBAIJAN",
         "name": "AZERBAYCAN",
         "countryId": 5
-    },  
-    {
-        "id": 670,
-        "code": "BOSNIA-HERZEGOVINA",
-        "name": "BOSNA HERSEK",
-        "countryId": 9
-    },
-    {
-        "id": 696,
-        "code": "ESTONYA",
-        "name": "ESTONYA",
-        "countryId": 6
-    },  
-    {
-        "id": 721,
-        "code": "NETHERLANDS",
-        "name": "HOLLANDA",
-        "countryId": 4
-    },
-    {
-        "id": 733,
-        "code": "ITALY",
-        "name": "ITALYA",
-        "countryId": 8
     },
     {
         "id": 751,
         "code": "NORTH CYPRUS",
         "name": "KUZEY KIBRIS",
         "countryId": 1
-    },
-    {
-        "id": 762,
-        "code": "HUNGARY",
-        "name": "MACARISTAN",
-        "countryId": 7
-    },
-    {
-        "id": 779,
-        "code": "MONACO",
-        "name": "MONAKO",
-        "countryId": 3
-    },
-    {
-        "id": 838,
-        "code": "VATIKAN",
-        "name": "VATIKAN",
-        "countryId": 10
     }
 ];
 

@@ -1,4 +1,4 @@
-[
+const cities = [
     {
         "id": 9146,
         "code": "ADANA",
@@ -4846,5 +4846,235 @@
         "code": "ZONGULDAK",
         "name": "ZONGULDAK",
         "stateId": 580
+    },
+    {
+        "id": 15153,
+        "code": "LEFKE",
+        "name": "LEFKE",
+        "stateId": 751
+    },
+    {
+        "id": 15154,
+        "code": "ISKELE(TRIKOMO)",
+        "name": "ISKELE",
+        "stateId": 751
+    },
+    {
+        "id": 15155,
+        "code": "GUZELYURT",
+        "name": "GUZELYURT",
+        "stateId": 751
+    },
+    {
+        "id": 15156,
+        "code": "DIPKARPAZ",
+        "name": "DIPKARPAZ",
+        "stateId": 751
+    },
+    {
+        "id": 15157,
+        "code": "LARNAKA",
+        "name": "LARNAKA",
+        "stateId": 751
+    },
+    {
+        "id": 15158,
+        "code": "LEFKOSA",
+        "name": "LEFKOSA",
+        "stateId": 751
+    },
+    {
+        "id": 15159,
+        "code": "GIRNE",
+        "name": "GIRNE",
+        "stateId": 751
+    },
+    {
+        "id": 15160,
+        "code": "GAZI MAGOSA",
+        "name": "GAZI MAGOSA",
+        "stateId": 751
+    },
+    {
+        "id": 11620,
+        "code": "ASKERAN (XANKANDI)",
+        "name": "ASKERAN (XANKANDI)",
+        "stateId": 658
+    },
+    {
+        "id": 11621,
+        "code": "SIYAZAN",
+        "name": "SIYAZAN",
+        "stateId": 658
+    },
+    {
+        "id": 11622,
+        "code": "QARASU",
+        "name": "QARASU",
+        "stateId": 658
+    },
+    {
+        "id": 11623,
+        "code": "ALI BAYRANLI",
+        "name": "ALI BAYRANLI",
+        "stateId": 658
+    },
+    {
+        "id": 11624,
+        "code": "SALYAN",
+        "name": "SALYAN",
+        "stateId": 658
+    },
+    {
+        "id": 11625,
+        "code": "MINGACEVIR",
+        "name": "MINGACEVIR",
+        "stateId": 658
+    },
+    {
+        "id": 11626,
+        "code": "TOVUZ",
+        "name": "TOVUZ",
+        "stateId": 658
+    },
+    {
+        "id": 11627,
+        "code": "GOYCAY",
+        "name": "GOYCAY",
+        "stateId": 658
+    },
+    {
+        "id": 11628,
+        "code": "MASTAGA",
+        "name": "MASTAGA",
+        "stateId": 658
+    },
+    {
+        "id": 11629,
+        "code": "SARUR",
+        "name": "SARUR",
+        "stateId": 658
+    },
+    {
+        "id": 11630,
+        "code": "XUDAT",
+        "name": "XUDAT",
+        "stateId": 658
+    },
+    {
+        "id": 11631,
+        "code": "BAKU",
+        "name": "BAKU",
+        "stateId": 658
+    },
+    {
+        "id": 11632,
+        "code": "QUBA",
+        "name": "KUBA",
+        "stateId": 658
+    },
+    {
+        "id": 11633,
+        "code": "QUSAR",
+        "name": "KUSARY",
+        "stateId": 658
+    },
+    {
+        "id": 11634,
+        "code": "GENCE",
+        "name": "GENCE",
+        "stateId": 658
+    },
+    {
+        "id": 11635,
+        "code": "SAKI",
+        "name": "SEKI",
+        "stateId": 658
+    },
+    {
+        "id": 11636,
+        "code": "LACHIN",
+        "name": "LACHIN",
+        "stateId": 658
+    },
+    {
+        "id": 11637,
+        "code": "NAXÇIVAN",
+        "name": "NAHCIVAN",
+        "stateId": 658
+    },
+    {
+        "id": 11638,
+        "code": "YEVLAX",
+        "name": "YEVLAX",
+        "stateId": 658
+    },
+    {
+        "id": 11639,
+        "code": "AGDAM",
+        "name": "AGDAM",
+        "stateId": 658
+    },
+    {
+        "id": 11640,
+        "code": "XACMAZ",
+        "name": "KACMAZ",
+        "stateId": 658
+    },
+    {
+        "id": 11641,
+        "code": "SUMQAYIT",
+        "name": "SUMQAYIT",
+        "stateId": 658
+    },
+    {
+        "id": 11642,
+        "code": "ASTARA",
+        "name": "ASTARA",
+        "stateId": 658
+    },
+    {
+        "id": 11643,
+        "code": "SAMAXI",
+        "name": "SAMAXI",
+        "stateId": 658
+    },
+    {
+        "id": 11644,
+        "code": "ORDUBAD",
+        "name": "ORDUBAD",
+        "stateId": 658
+    },
+    {
+        "id": 11645,
+        "code": "LANKARAN",
+        "name": "LENKERAN",
+        "stateId": 658
+    },
+    {
+        "id": 11646,
+        "code": "QAZAX",
+        "name": "KAZAKH",
+        "stateId": 658
+    },
+    {
+        "id": 11647,
+        "code": "SABIRABAD",
+        "name": "SABIRABAD",
+        "stateId": 658
+    },
+    {
+        "id": 11648,
+        "code": "SHUSHA",
+        "name": "SUSA",
+        "stateId": 658
+    },
+    {
+        "id": 11649,
+        "code": "ZAKATALY",
+        "name": "ZAKATALY",
+        "stateId": 658
     }
 ]
+
+export default cities;
