@@ -24,8 +24,9 @@ router.get('/States', async (req, res, next) => {
 });
 
 router.get('/States/:countryid', async (req, res, next) => {
+    const countryId = parseInt(req.params.countryid);
     res.status(SC.OK).jsonp({
-        data: stateService.getStates(),
+        data: stateService.getStatesByCountryId(countryId),
         success: true,
         message: null
     });
