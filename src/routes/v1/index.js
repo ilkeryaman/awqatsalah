@@ -4,6 +4,6 @@ import nonAuthRoutes from './non-auth';
 
 const router = express.Router();
 router.use('/Auth', authRoutes);
-router.use('/', nonAuthRoutes);
+router.use('/api', nonAuthRoutes);
 
 export default router;
