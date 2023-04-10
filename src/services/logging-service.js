@@ -1,4 +1,5 @@
 import colorCode from "../resources/color-codes";
+import { sslEnabled } from "./ssl-service";
 import dotenv from 'dotenv';
 dotenv.config();
 const port = process.env.SERVER_PORT;
@@ -20,7 +21,7 @@ const printRoute = (path, layer) => {
             colorCode.yellow,
             '[' + method + ']',
             method === 'GET' ? '\t\t' : '\t',
-            `http://localhost:${port}/${path.concat(split(layer.regexp)).filter(Boolean).join('/')}`
+            `${sslEnabled ? 'https': 'http'}://localhost:${port}/${path.concat(split(layer.regexp)).filter(Boolean).join('/')}`
         );
     }
 }
