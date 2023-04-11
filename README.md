@@ -1,6 +1,6 @@
 # AwqatSalah için Mock Server / Mock Server for AwqatSalah
 
-Bu uygulama, Diyanet İşleri Başkanlığı tarafından sağlanan AwqatSalah Rest servisleri ile benzer davranışı gösteren bir uygulamadır. Servis çağrımlarında örnek data dönüşü yaparak, kota sınırına takılmadan kolay geliştirme yapmanızı sağlar.
+Bu uygulama, Diyanet İşleri Başkanlığı tarafından sağlanan AwqatSalah Namaz Vakitleri Rest servisleri ile benzer davranışı gösteren bir uygulamadır. Servis çağrımlarında örnek data dönüşü yaparak, kota sınırına takılmadan kolay geliştirme yapmanızı sağlar.
 
 This is a project that generates similar responses for AwqatSalah Rest services which is belonged to Presidency of Religious Affairs, at Republic of Türkiye. It generates mock data and help you avoid query limits.
 
