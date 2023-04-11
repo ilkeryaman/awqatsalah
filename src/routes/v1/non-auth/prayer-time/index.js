@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/Daily/:cityid', async (req, res, next) => {
     res.status(SC.OK).jsonp({
-        data: prayerTimeService.generateResponseArray(1),
+        data: prayerTimeService.generateResponseArray(),
         success: true,
         message: null
     });
@@ -14,8 +14,9 @@ router.get('/Daily/:cityid', async (req, res, next) => {
 });
 
 router.get('/Weekly/:cityid', async (req, res, next) => {
+    const startDateOfWeek = prayerTimeService.getStartDateOfWeek();
     res.status(SC.OK).jsonp({
-        data: prayerTimeService.generateResponseArray(7),
+        data: prayerTimeService.generateResponseArray(startDateOfWeek.day, 7 + 1 + startDateOfWeek.margin),
         success: true,
         message: null
     });
@@ -23,8 +24,9 @@ router.get('/Weekly/:cityid', async (req, res, next) => {
 });
 
 router.get('/Monthly/:cityid', async (req, res, next) => {
+    const startDateOfWeek = prayerTimeService.getStartDateOfWeek();
     res.status(SC.OK).jsonp({
-        data: prayerTimeService.generateResponseArray(30),
+        data: prayerTimeService.generateResponseArray(startDateOfWeek.day, 30 + 1 + startDateOfWeek.margin),
         success: true,
         message: null
     });

@@ -2,9 +2,19 @@ import moment from 'moment';
 import { toHijri } from 'hijri-converter';
 import { hijriMonths, gregorianMonths, gregorianDays } from '../resources/data/date';
 
-const generateResponseArray = (dayCount) => {
+const getStartDateOfWeek = () => {
+    let today = moment(new Date());
+    const startDateOfWeek = today.startOf('week').add(1, 'days');
+    today = moment(new Date()); // to fix today again
+    return {
+        day: startDateOfWeek,
+        margin: today.diff(startDateOfWeek, 'days')
+    }
+}
+
+const generateResponseArray = (startDate = moment(new Date()), dayCount = 1) => {
     return Array(dayCount).fill().map((_, i) => {
-        const new_date = moment(new Date(), "YYYY-MM-DD").add(i, 'days');
+        const new_date = startDate.add(i, 'days');
         let weekDay = new_date.day();
         weekDay = weekDay === 0 ? 7 : weekDay;
         const day = parseInt(new_date.format('D'));
@@ -13,6 +23,7 @@ const generateResponseArray = (dayCount) => {
         const monthLong = new_date.format('MM');
         const year = parseInt(new_date.format('YYYY'));
         const hijriDate = toHijri(year, month, day);
+        startDate.add(-1 * i, 'days'); // to fix startDate again
 
         return {
             shapeMoonUrl: "http://namazvakti.diyanet.gov.tr/images/r5.gif",
@@ -29,10 +40,11 @@ const generateResponseArray = (dayCount) => {
             hijriDateLong: hijriDate.hd + ' ' + hijriMonths[hijriDate.hm - 1] + ' ' + hijriDate.hy,
             hijriDateLongIso8601: null,
             qiblaTime: "11:31",
-            gregorianDateShort: day + '.' + month + '.' + year,
+            gregorianDateShort: dayLong + '.' + monthLong + '.' + year,
             gregorianDateShortIso8601: dayLong + '.' + monthLong + '.' + year,
             gregorianDateLong: day + ' ' + gregorianMonths[month - 1] + ' ' + year + ' ' + gregorianDays[weekDay - 1],
-            gregorianDateLongIso8601: year + '-' + monthLong + '-' + dayLong + 'T00:00:00.0000000+03:00'
+            gregorianDateLongIso8601: year + '-' + monthLong + '-' + dayLong + 'T00:00:00.0000000+03:00',
+            greenwichMeanTimeZone: 3
         }
     });
 }
@@ -56,6 +68,7 @@ const generateEidTime = () => {
 }
 
 export default {
+    getStartDateOfWeek,
     generateResponseArray,
     generateEidTime
 }

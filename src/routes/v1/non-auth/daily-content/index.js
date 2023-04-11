@@ -9,7 +9,7 @@ router.get('/', async (req, res, next) => {
 
     res.status(SC.OK).jsonp({
         data: {
-            id: dayOfYear,
+            id: 0,
             dayOfYear,
             verse: "\"Gökleri, yeri ve bu ikisi içinde yaydığı canlıları yaratması, O'nun varlığının delillerindendir. O, dilediği zaman, onları bir araya getirmeye de gücü yetendir.\" ",
             verseSource: "(Şu'arâ, 42/29)",
