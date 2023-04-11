@@ -7,7 +7,6 @@ const router = express.Router();
 router.get('/', async (req, res, next) => {
     const dayOfYear = dailyContentService.getDayOfYear();
 
-
     res.status(SC.OK).jsonp({
         data: {
             id: dayOfYear,

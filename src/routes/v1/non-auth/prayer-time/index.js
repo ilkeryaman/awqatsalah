@@ -33,14 +33,7 @@ router.get('/Monthly/:cityid', async (req, res, next) => {
 
 router.get('/Eid/:cityid', async (req, res, next) => {
     res.status(SC.OK).jsonp({
-        data: {
-            eidAlAdhaHijri: "10 Zilhicce 1443",
-            eidAlAdhaTime: "05:54:00",
-            eidAlAdhaDate: "9 Temmuz 2022 Cumartesi",
-            eidAlFitrHijri: "10 Zilhicce 1443",
-            eidAlFitrTime: "05:54:00",
-            eidAlFitrDate: "9 Temmuz 2022 Cumartesi"
-        },
+        data: prayerTimeService.generateEidTime(),
         success: true,
         message: null
     });
