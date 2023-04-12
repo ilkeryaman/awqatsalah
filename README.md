@@ -62,6 +62,7 @@ Api listesi ve method tipleri (GET, POST, PUT, PATCH, DELETE vs.) alttaki gibi l
  [GET]           https://localhost:3000/api/PrayerTime/Weekly/:cityid
  [GET]           https://localhost:3000/api/PrayerTime/Monthly/:cityid
  [GET]           https://localhost:3000/api/PrayerTime/Eid/:cityid
+ [GET]           https://localhost:3000/api/PrayerTime/Ramadan/:cityid
 ```
 
 > **NOTE**: Bu proje örnek data üretmektedir. Gerçek data ile çalışmak için orjinal api kullanınız.
@@ -130,6 +131,7 @@ Endpoints and method types (GET, POST, PUT, PATCH, DELETE etc.) will be shown as
  [GET]           https://localhost:3000/api/PrayerTime/Weekly/:cityid
  [GET]           https://localhost:3000/api/PrayerTime/Monthly/:cityid
  [GET]           https://localhost:3000/api/PrayerTime/Eid/:cityid
+ [GET]           https://localhost:3000/api/PrayerTime/Ramadan/:cityid
 ```
 
 > **NOTE**: This project generates sample data for development purposes. To get accurate data, please use original apis.
