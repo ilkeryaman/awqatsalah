@@ -42,5 +42,14 @@ router.get('/Eid/:cityid', async (req, res, next) => {
     next();
 });
 
+router.get('/Ramadan/:cityid', async (req, res, next) => {
+    res.status(SC.OK).jsonp({
+        data: prayerTimeService.generateRamadan(),
+        success: true,
+        message: null
+    });
+    next();
+});
+
 
 export default router;
