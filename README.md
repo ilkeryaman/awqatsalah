@@ -65,7 +65,7 @@ Api listesi ve method tipleri (GET, POST, PUT, PATCH, DELETE vs.) alttaki gibi l
  [GET]           https://localhost:3000/api/PrayerTime/Ramadan/:cityid
 ```
 
-> **NOTE**: Bu proje örnek data üretmektedir. Gerçek data ile çalışmak için orjinal api kullanınız.
+> **NOT**: Bu proje örnek data üretmektedir. Gerçek data ile çalışmak için orjinal api kullanınız.
 
 <br/>
 
